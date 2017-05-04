@@ -95,7 +95,6 @@ def naive_bayes_self(class_labels):
       tokens = clean_review(text)
       scores = []
       for cindex, bag in enumerate(counters): #for each class
-        import pdb;pdb.set_trace()
         score = math.log1p(probabilities[cindex])
         for word in tokens:
           #for each word, we need the probablity that word given the class / bag
