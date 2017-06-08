@@ -1,2 +1,19 @@
 .DS_Store
 naive_bayes/data
+tourstats/stats*
+tourstats/pgatourstats.zip
+
+
+# we don't want to save the data files.
+#Just the code to scrap the data files if that's what you're looking for.
+*.json
+*.csv
+
+*.npy
+*.pkl
+
+*.pyc
+*.log
+scraping/pages
+scraping/texts
+scraping/scraping

@@ -5,9 +5,9 @@ import csv
 import urllib
 import os
 
-import gevent
-from gevent import monkey
-monkey.patch_all()
+#import gevent
+#from gevent import monkey
+#monkey.patch_all()
 
 
 url_stub = "http://www.pgatour.com/stats/stat.%s.%s.html" #stat id, year
@@ -37,6 +37,7 @@ def gather_html():
       for link in table.find_all("a"):
         stat_ids.append(link['href'].split('.')[1])
   starting_year = 2015 #page in order to see which years we have info for
+  print stat_ids
   for stat_id in stat_ids:
     url = url_stub % (stat_id, starting_year)
     page = requests.get(url)
@@ -60,7 +61,9 @@ def gather_html():
     jobs = [gevent.spawn(gather_pages, pair[0], pair[1]) for pair in url_filenames]
     gevent.joinall(jobs)
 
+gather_html()
 
+'''
 for folder in os.listdir("stats_html"):
   path = "stats_html/%s" % folder
   if os.path.isdir(path):
@@ -93,7 +96,6 @@ for folder in os.listdir("stats_html"):
 
 
 
-'''
 column_keys = ['%', 'AVG']
 inputs = [
 {'name': 'driving_distance', 'sid': 101, 'conversion': float},

@@ -48,7 +48,7 @@ text['imgsrc'] = []
 #test_content is needed to get all of the text within the tag, not just on the top level
 for tag in post.findall('p'):
   text['p'].append(tag.text_content())
-  for img in tag.findall('img'):
+  for img in tag.findall('img'): #images in paragraphs, so need to check here
     text['imgsrc'].append(img.attrib['src'])
 for tag in post.findall('h1'):
   text['h1'].append(tag.text_content())
