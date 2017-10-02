@@ -11,6 +11,9 @@ tourstats/pgatourstats.zip
 
 *.npy
 *.pkl
+*.html
+*.zip
+*.png
 
 *.pyc
 *.log
