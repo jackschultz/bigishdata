@@ -1,6 +1,6 @@
 PyDispatcher==2.0.5
 Scrapy==1.4.0
-Twisted==17.1.0
+Twisted==19.7.0
 beautifulsoup4==4.6.0
 certifi==2017.4.17
 chardet==3.0.3
