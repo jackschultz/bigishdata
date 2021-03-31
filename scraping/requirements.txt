@@ -6,7 +6,7 @@ certifi==2017.4.17
 chardet==3.0.3
 cssselect==1.0.1
 idna==2.5
-lxml==3.7.3
+lxml==4.6.3
 parsel==1.2.0
 pyOpenSSL==17.0.0
 queuelib==1.4.2
