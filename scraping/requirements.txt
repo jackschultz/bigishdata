@@ -1,5 +1,5 @@
 PyDispatcher==2.0.5
-Scrapy==1.4.0
+Scrapy==2.6.1
 Twisted==17.1.0
 beautifulsoup4==4.6.0
 certifi==2017.4.17
