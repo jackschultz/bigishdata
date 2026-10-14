@@ -13,5 +13,4 @@ Code from posts on [bigishdata.com](https://bigishdata.com).
 Code for other posts has its own repository:
 [nba-optimize](https://github.com/jackschultz/nba-optimize),
 [usopen](https://github.com/jackschultz/usopen),
-[jbc](https://github.com/jackschultz/jbc) (the blockchain series),
-[bigishdata-airflow](https://github.com/jackschultz/bigishdata-airflow).
+[jbc](https://github.com/jackschultz/jbc) (the blockchain series).
